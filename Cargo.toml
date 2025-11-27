@@ -1,0 +1,13 @@
+[package]
+name = "lab1"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+strum = "0.27"
+strum_macros = "0.27"
+lazy_static = "1.5.0"
+enum-tags = "0.1.0"
+enum-tags-traits = "=0.1.0"
+ratatui = "0.29.0"
+color-eyre = "0.6.5"
