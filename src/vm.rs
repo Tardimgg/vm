@@ -116,6 +116,10 @@ pub fn next_step(state: &mut VmState) -> Result<bool, String> {
                 pc.set(value);
             }
         }
+        CommandType::MULT => {
+            let acc = registers.get_mut(RegisterName::Acc).unwrap();
+            acc.put_u16(acc.as_u16().cast_signed().wrapping_mul(value.cast_signed()).cast_unsigned());
+        }
     }
     if !pc.changed {
         pc.set(pc.pc + 2)

@@ -21,7 +21,8 @@ pub enum CommandType {
     MOV,
     LRG,
     JMPG,
-    JMPNG
+    JMPNG,
+    MULT
 }
 
 impl CommandType {
@@ -38,7 +39,8 @@ impl CommandType {
             CommandType::MOV => 7,
             CommandType::LRG => 8,
             CommandType::JMPG => 9,
-            CommandType::JMPNG => 10
+            CommandType::JMPNG => 10,
+            CommandType::MULT => 11
         }
     }
 

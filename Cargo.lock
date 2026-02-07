@@ -306,19 +306,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 
 [[package]]
-name = "lab1"
-version = "0.1.0"
-dependencies = [
- "color-eyre",
- "enum-tags",
- "enum-tags-traits",
- "lazy_static",
- "ratatui",
- "strum 0.27.2",
- "strum_macros 0.27.2",
-]
-
-[[package]]
 name = "lazy_static"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -737,6 +724,19 @@ name = "valuable"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba73ea9cf16a25df0c8caa16c51acb937d5712a8429db78a3ee29d5dcacd3a65"
+
+[[package]]
+name = "vm"
+version = "0.1.0"
+dependencies = [
+ "color-eyre",
+ "enum-tags",
+ "enum-tags-traits",
+ "lazy_static",
+ "ratatui",
+ "strum 0.27.2",
+ "strum_macros 0.27.2",
+]
 
 [[package]]
 name = "wasi"
